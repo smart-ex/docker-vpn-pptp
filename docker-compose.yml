@@ -6,6 +6,6 @@ services:
         build: 
             context: .
             dockerfile: ./Dockerfile
-        ports: ["1723","1723"]
+        ports: ["1723:1723"]
         volumes: 
             - ./chap-secrets:/etc/ppp/chap-secrets
