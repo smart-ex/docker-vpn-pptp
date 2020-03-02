@@ -1,0 +1,11 @@
+version: "3"
+
+services: 
+    pptp:
+        restart: always
+        build: 
+            context: .
+            dockerfile: ./Dockerfile
+        ports: ["1723","1723"]
+        volumes: 
+            - ./chap-secrets:/etc/ppp/chap-secrets
